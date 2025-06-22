@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { navigationData, Category, Website } from '@/data/navigation';
 import NavigationCard from '@/components/NavigationCard';
 import Nav from '@/components/Nav';
-import type { Item, ItemListResponse } from '@/types/item';
+// import type { Item, ItemListResponse } from '@/types/item';
 
 export default function Home() {
 
@@ -14,21 +14,21 @@ export default function Home() {
     // fetchItems();
   },[])
 
-  const fetchItems = async () => {
-    try {
-      const response = await fetch('/api/items');
-      if (!response.ok) {
-        throw new Error('Failed to fetch items');
-      }
-      const data: ItemListResponse = await response.json();
-      console.log(data)
-    } catch (err) {
-      // setError(err instanceof Error ? err.message : 'An error occurred');
-    } finally {
-      // setLoading(false);
-      console.log('find')
-    }
-  }
+  // const fetchItems = async () => {
+  //   try {
+  //     const response = await fetch('/api/items');
+  //     if (!response.ok) {
+  //       throw new Error('Failed to fetch items');
+  //     }
+  //     const data: ItemListResponse = await response.json();
+  //     console.log(data)
+  //   } catch (err) {
+  //     // setError(err instanceof Error ? err.message : 'An error occurred');
+  //   } finally {
+  //     // setLoading(false);
+  //     console.log('find')
+  //   }
+  // }
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8 px-4 sm:px-6 lg:px-8">
