@@ -2,8 +2,8 @@ import React from "react";
 
 const NAVMAIM = function() {
     return(
-        <div>
-            <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">sevenliao站点</h1>
+        <div className="navContent">
+            <h1 className="navContent-title">sevenliao<span>一个自己方便的网站</span></h1>
         </div>
     )
 }

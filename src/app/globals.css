@@ -19,3 +19,44 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.navContent{
+  /* color: #ec189d; */
+  color: #000;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.navContent-title{
+  font-size: 32px;
+  font-weight: bold;
+}
+.navContent-title span{
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.list{
+    margin: 2% 2%;
+    background-color: #ffffff;
+}
+
+.list li{
+    margin-bottom: 1%;
+    display: inline-block;
+}
+
+.list .block{
+    padding:10px 10px;
+}
+
+.sevenImg{
+  width: 120px; height: 120px; display: inline-block;
+}
+
+.navCardItem{
+  padding: 8px 8px;
+  border: 1px solid #f3f4f6;
+}
+.navCardItem-desc{
+  color: #4b5563;
+}
