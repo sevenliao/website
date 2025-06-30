@@ -52,7 +52,7 @@ export default function Home() {
               <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
                 友情链接
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="">
                 <ul className="list">
                   <li style={{textAlign: 'left'}}>
                     <h3>1.搜索关注微信公众号：sevenliao，内容更精彩</h3>
