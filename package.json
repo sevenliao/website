@@ -1,10 +1,11 @@
 {
-  "name": "test",
+  "name": "sevenliao-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "ssg": "next build",
     "start": "next start",
     "lint": "next lint"
   },

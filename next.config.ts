@@ -2,7 +2,13 @@ import type { NextConfig } from "next";
 import TerserPlugin from 'terser-webpack-plugin'
 
 const nextConfig: NextConfig = {
-
+  // 启用静态导出
+  output: 'export',
+  
+  // 确保路径正确
+  trailingSlash: true,
+  assetPrefix: './',
+  
   // 自定义 webpack 配置
   webpack: (config, { isServer, dev }) => {
     // 只在生产环境且不是服务端渲染时配置
